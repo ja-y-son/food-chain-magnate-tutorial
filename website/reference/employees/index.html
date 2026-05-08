@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Guide — FCM Tutorial</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="page-shell page-shell--standard">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../../" class="site-header__logo">FCM Tutorial</a>
+      <button class="site-header__hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="site-header__nav">
+        <a href="../../learn/">Learn to Play</a>
+        <a href="../../reference/">Quick Reference</a>
+        <a href="../../full-game/">Full Game</a>
+        <a href="../../glossary/">Glossary</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content">
+    <h1>Employee Guide</h1>
+    <p class="subtitle">All employees, their actions, and how they train up.</p>
+
+    <figure class="figure">
+      <div class="figure__img-wrapper">
+        <img src="../../images/01_employee_card_anatomy.webp" alt="Anatomy of an employee card showing the name, action type, work slots provided, and salary cost" loading="lazy">
+      </div>
+      <figcaption>Employee card anatomy — learn to read what each card does at a glance.</figcaption>
+    </figure>
+
+    <figure class="figure">
+      <div class="figure__img-wrapper">
+        <img src="../../images/01b_employee_card_progression.webp" alt="Employee training paths showing how entry-level employees upgrade into specialized advanced roles" loading="lazy">
+      </div>
+      <figcaption>Training paths — entry-level employees train into powerful specialists.</figcaption>
+    </figure>
+
+    <h2>Kitchen Staff</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Employee</th><th>Entry-Level?</th><th>Action</th><th>Trains Into</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Burger Cook</strong></td><td>Yes</td><td>Produce 1 burger</td><td>Burger Chef</td></tr>
+          <tr><td><strong>Burger Chef</strong></td><td>No</td><td>Produce 3 burgers</td><td>—</td></tr>
+          <tr><td><strong>Pizza Cook</strong></td><td>Yes</td><td>Produce 3 pizzas</td><td>Pizza Chef</td></tr>
+          <tr><td><strong>Pizza Chef</strong></td><td>No</td><td>Produce 8 pizzas</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Drink Collectors</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Employee</th><th>Entry-Level?</th><th>Action</th><th>Range</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Errand Boy</strong></td><td>Yes</td><td>Collect 1 drink of any type (no route needed)</td><td>—</td></tr>
+          <tr><td><strong>Cart Operator</strong></td><td>Yes</td><td>Trace road route, collect 2 drinks per supplier</td><td>2 tiles</td></tr>
+          <tr><td><strong>Truck Driver</strong></td><td>No</td><td>Trace road route, collect 3 drinks per supplier</td><td>5 tiles</td></tr>
+          <tr><td><strong>Zeppelin Pilot</strong></td><td>No</td><td>Fly by air, collect 2 drinks per supplier on tiles entered</td><td>Air</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Marketing Staff</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Employee</th><th>Entry-Level?</th><th>Campaign Types</th><th>Trains Into</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Marketing Trainee</strong></td><td>Yes</td><td>Billboard</td><td>Campaign Manager</td></tr>
+          <tr><td><strong>Campaign Manager</strong></td><td>No</td><td>Billboard, Mailbox</td><td>Brand Manager</td></tr>
+          <tr><td><strong>Brand Manager</strong></td><td>No</td><td>Billboard, Mailbox, Airplane</td><td>Brand Director</td></tr>
+          <tr><td><strong>Brand Director</strong></td><td>No</td><td>All 4 types</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Management &amp; HR</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Employee</th><th>Entry-Level?</th><th>Action / Provides</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>CEO</strong></td><td>Starting</td><td>3 work slots + 1 hire/round. Root of your company tree.</td></tr>
+          <tr><td><strong>Management Trainee</strong></td><td>Yes</td><td>Trains into many specialist roles. The most versatile hire.</td></tr>
+          <tr><td><strong>Recruiting Girl</strong></td><td>Yes</td><td>1 extra hire action per round.</td></tr>
+          <tr><td><strong>Trainer</strong></td><td>Yes</td><td>Train 1 employee per round (must be On the Beach).</td></tr>
+          <tr><td><strong>Coach</strong></td><td>No</td><td>Train 2 employees per round.</td></tr>
+          <tr><td><strong>Guru</strong></td><td>No</td><td>Train 3 employees per round.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Specialists (trained from Management Trainee path)</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Employee</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Waitress</strong></td><td>Breaks tie in competition (most waitresses wins). Mandatory cash bonus.</td></tr>
+          <tr><td><strong>New Business Developer</strong></td><td>Place houses and gardens on the map.</td></tr>
+          <tr><td><strong>Local Manager</strong></td><td>Open new restaurant within range 3 (Coming Soon). Mandatory Drive-In signs.</td></tr>
+          <tr><td><strong>Regional Manager</strong></td><td>Open restaurant anywhere (immediately open) or relocate. Mandatory Drive-In signs.</td></tr>
+          <tr><td><strong>Pricing Manager</strong></td><td>Mandatory: lower your item price by $1.</td></tr>
+          <tr><td><strong>Discount Manager</strong></td><td>Mandatory: lower your item price by $3.</td></tr>
+          <tr><td><strong>Luxuries Manager</strong></td><td>Mandatory: raise your item price by $10.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <aside class="callout callout--tip">
+      <p class="callout__label">💡 Tip</p>
+      <p>For your first game, focus on a simple engine: a cook, a drink collector, and a marketeer. Expand from there based on what your opponents are doing.</p>
+    </aside>
+  </main>
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <a href="../../learn/" class="bottom-nav__item"><span class="bottom-nav__icon">📖</span> Learn</a>
+    <a href="../../reference/" class="bottom-nav__item is-active"><span class="bottom-nav__icon">📋</span> Reference</a>
+    <a href="#" class="bottom-nav__item"><span class="bottom-nav__icon">☰</span> Menu</a>
+  </nav>
+</div>
+<script src="../../js/main.js"></script>
+</body>
+</html>

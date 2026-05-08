@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinnertime Checklist — FCM Tutorial</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="page-shell page-shell--standard">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../../" class="site-header__logo">FCM Tutorial</a>
+      <button class="site-header__hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="site-header__nav">
+        <a href="../../learn/">Learn to Play</a>
+        <a href="../../reference/">Quick Reference</a>
+        <a href="../../full-game/">Full Game</a>
+        <a href="../../glossary/">Glossary</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content">
+    <h1>Dinnertime Checklist</h1>
+    <p class="subtitle">Step-by-step guide to resolving sales each round.</p>
+
+    <section>
+      <h2>Sales Resolution Flowchart</h2>
+      <div class="flowchart">
+        <div class="flowchart__step flowchart__step--decision">
+          <p class="flowchart__question">Does the house have demand?</p>
+          <div class="flowchart__branches">
+            <div class="flowchart__branch flowchart__branch--no">
+              <span class="flowchart__label">No →</span>
+              <p class="flowchart__result">Skip this house. No sale.</p>
+            </div>
+            <div class="flowchart__branch flowchart__branch--yes">
+              <span class="flowchart__label">Yes ↓</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flowchart__step flowchart__step--decision">
+          <p class="flowchart__question">Is it connected by road to a restaurant?</p>
+          <div class="flowchart__branches">
+            <div class="flowchart__branch flowchart__branch--no">
+              <span class="flowchart__label">No →</span>
+              <p class="flowchart__result">No sale. Demand stays (or is wasted, depending on rules).</p>
+            </div>
+            <div class="flowchart__branch flowchart__branch--yes">
+              <span class="flowchart__label">Yes ↓</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flowchart__step flowchart__step--decision">
+          <p class="flowchart__question">Does the restaurant have ALL demanded items?</p>
+          <div class="flowchart__branches">
+            <div class="flowchart__branch flowchart__branch--no">
+              <span class="flowchart__label">No →</span>
+              <p class="flowchart__result">No sale from this restaurant. Check other connected restaurants.</p>
+            </div>
+            <div class="flowchart__branch flowchart__branch--yes">
+              <span class="flowchart__label">Yes ↓</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flowchart__step flowchart__step--decision">
+          <p class="flowchart__question">Is there one restaurant or multiple that can fulfill?</p>
+          <div class="flowchart__branches">
+            <div class="flowchart__branch flowchart__branch--one">
+              <span class="flowchart__label">One →</span>
+              <p class="flowchart__result"><strong>Sale!</strong> That restaurant gets the payment.</p>
+            </div>
+            <div class="flowchart__branch flowchart__branch--multiple">
+              <span class="flowchart__label">Multiple →</span>
+              <p class="flowchart__result"><strong>Competition!</strong> Lowest price wins. Ties broken by shortest distance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Payment Calculation</h2>
+
+      <aside class="callout callout--key-rule">
+        <p class="callout__label">📌 Key Rule</p>
+        <p>Each item sold earns <strong>$10</strong> from the bank. Houses with a garden pay <strong>double — $20 per item</strong>.</p>
+      </aside>
+
+      <aside class="callout callout--example">
+        <p class="callout__label">🔍 Example: Regular House</p>
+        <p>A house demands 1 burger + 1 drink. You have both in stock.</p>
+        <ul>
+          <li>2 items × $10 = <strong>$20 from the bank</strong></li>
+        </ul>
+      </aside>
+
+      <aside class="callout callout--example">
+        <p class="callout__label">🔍 Example: House with Garden</p>
+        <p>Same sale to a house with a garden:</p>
+        <ul>
+          <li>2 items × $10 = $20 base</li>
+          <li>Garden doubles it → <strong>$40 from the bank</strong></li>
+        </ul>
+      </aside>
+
+      <h2>Competition Tiebreakers</h2>
+      <p>When multiple restaurants can fulfill a house's demand, resolve by:</p>
+      <ol>
+        <li><strong>Lowest effective price</strong> (item price + distance in tile crossings)</li>
+        <li><strong>Most Waitresses</strong> played this round (tiebreaker)</li>
+        <li><strong>Earliest in turn order</strong> (final tiebreaker)</li>
+      </ol>
+
+      <aside class="callout callout--watch-out">
+        <p class="callout__label">⚠️ Watch Out</p>
+        <p>Effective price determines the winner, but you're only <strong>paid the item price</strong>. Distance penalizes your competitiveness — it doesn't increase your revenue.</p>
+      </aside>
+
+      <figure class="figure">
+        <div class="figure__img-wrapper">
+          <img src="../../images/07_dinnertime_selling.webp" alt="Diagram showing the complete dinnertime sales process: check demand, check road connection, check stock, resolve competition, process payment" loading="lazy">
+        </div>
+        <figcaption>The complete dinnertime sales resolution process.</figcaption>
+      </figure>
+    </section>
+  </main>
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <a href="../../learn/" class="bottom-nav__item"><span class="bottom-nav__icon">📖</span> Learn</a>
+    <a href="../../reference/" class="bottom-nav__item is-active"><span class="bottom-nav__icon">📋</span> Reference</a>
+    <a href="#" class="bottom-nav__item"><span class="bottom-nav__icon">☰</span> Menu</a>
+  </nav>
+</div>
+<script src="../../js/main.js"></script>
+</body>
+</html>

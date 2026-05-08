@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Round Summary — FCM Tutorial</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="page-shell page-shell--standard">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../../" class="site-header__logo">FCM Tutorial</a>
+      <button class="site-header__hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="site-header__nav">
+        <a href="../../learn/">Learn to Play</a>
+        <a href="../../reference/">Quick Reference</a>
+        <a href="../../full-game/">Full Game</a>
+        <a href="../../glossary/">Glossary</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content">
+    <h1>Round Summary</h1>
+    <p class="subtitle">Every round follows the same 7 phases in strict order. Phases 1–3 require decisions; 4–7 are automatic.</p>
+
+    <div class="phase-timeline">
+      <details class="phase-timeline__item" open>
+        <summary class="phase-timeline__heading">
+          <span class="phase-timeline__number">1</span>
+          Phase 1: Restructuring
+          <span class="phase-timeline__tag phase-timeline__tag--green">Decision</span>
+        </summary>
+        <p><strong>Everyone simultaneously</strong> decides which employees to play and which to bench.</p>
+        <ul>
+          <li>Place employees to work <strong>face-down below</strong> your CEO.</li>
+          <li>Place employees to bench <strong>face-down above</strong> (On the Beach).</li>
+          <li>Everyone reveals at the same time.</li>
+        </ul>
+        <aside class="callout callout--watch-out">
+          <p class="callout__label">⚠️</p>
+          <p>If you assign more employees than you have slots, ALL go On the Beach!</p>
+        </aside>
+      </details>
+
+      <details class="phase-timeline__item">
+        <summary class="phase-timeline__heading">
+          <span class="phase-timeline__number">2</span>
+          Phase 2: Order of Business
+          <span class="phase-timeline__tag phase-timeline__tag--green">Decision</span>
+        </summary>
+        <p>Determine turn order based on <strong>empty work slots</strong>. More empty slots = pick your position first.</p>
+        <ul>
+          <li>Ties broken by previous turn order.</li>
+          <li>Going first is often very valuable for hiring.</li>
+        </ul>
+      </details>
+
+      <details class="phase-timeline__item">
+        <summary class="phase-timeline__heading">
+          <span class="phase-timeline__number">3</span>
+          Phase 3: Working 9-5
+          <span class="phase-timeline__tag phase-timeline__tag--green">Decision</span>
+        </summary>
+        <p>In turn order, each player resolves sub-phases:</p>
+        <ol style="list-style-type: lower-alpha;">
+          <li><strong>Hire</strong> — CEO gives 1 free hire; Recruiters give more.</li>
+          <li><strong>Train</strong> — Upgrade employees that are On the Beach (requires Trainer).</li>
+          <li><strong>Drive-Ins</strong> — Mandatory with Local/Regional Manager.</li>
+          <li><strong>Marketing</strong> — Place campaign tokens (Marketeers become busy).</li>
+          <li><strong>Produce food &amp; collect drinks</strong> — Kitchen staff produce; Errand Boys/Carts/Trucks collect.</li>
+          <li><strong>Place houses &amp; gardens</strong> — New Business Developer action.</li>
+          <li><strong>Place/move restaurants</strong> — Local/Regional Manager action.</li>
+        </ol>
+      </details>
+
+      <details class="phase-timeline__item">
+        <summary class="phase-timeline__heading">
+          <span class="phase-timeline__number">4</span>
+          Phase 4: Dinnertime 💰
+          <span class="phase-timeline__tag phase-timeline__tag--gray">Auto</span>
+        </summary>
+        <p><strong>No decisions.</strong> Houses checked in numerical order:</p>
+        <ol>
+          <li>Does it have demand? → If no, skip.</li>
+          <li>Is it connected by road to a restaurant? → If no, skip.</li>
+          <li>Does the restaurant have ALL demanded items? → If no, skip.</li>
+          <li>One restaurant qualifies → <strong>Sale!</strong> ($10/item, $20/item with garden)</li>
+          <li>Multiple qualify → <strong>Competition:</strong> lowest effective price wins.</li>
+        </ol>
+        <p>Demand counters removed after sale. <strong>Game ends if bank can't pay.</strong></p>
+      </details>
+
+      <details class="phase-timeline__item">
+        <summary class="phase-timeline__heading">
+          <span class="phase-timeline__number">5</span>
+          Phase 5: <s>Payday</s>
+          <span class="phase-timeline__tag phase-timeline__tag--strikethrough">Skipped</span>
+        </summary>
+        <p><strong>SKIPPED in the Introductory Game.</strong> No salaries to pay. In the full game, you pay each employee's salary from your cash.</p>
+      </details>
+
+      <details class="phase-timeline__item">
+        <summary class="phase-timeline__heading">
+          <span class="phase-timeline__number">6</span>
+          Phase 6: Marketing
+          <span class="phase-timeline__tag phase-timeline__tag--gray">Auto</span>
+        </summary>
+        <p>Active campaigns run in <strong>numerical order</strong>:</p>
+        <ul>
+          <li>Place 1 demand counter on each house within reach.</li>
+          <li>Remove 1 duration counter from the campaign.</li>
+          <li>Campaign ends when duration hits 0 → Marketeer freed.</li>
+        </ul>
+        <p>Houses max out at 3 demand (5 with garden).</p>
+      </details>
+
+      <details class="phase-timeline__item">
+        <summary class="phase-timeline__heading">
+          <span class="phase-timeline__number">7</span>
+          Phase 7: Cleanup
+          <span class="phase-timeline__tag phase-timeline__tag--gray">Auto</span>
+        </summary>
+        <ul>
+          <li><strong>Discard</strong> all unsold food/drinks (no carryover!).</li>
+          <li><strong>Return</strong> employees to hand (busy Marketeers stay out).</li>
+          <li><strong>Remove</strong> Drive-In and Coming Soon signs.</li>
+          <li>Start the next round!</li>
+        </ul>
+      </details>
+    </div>
+
+    <aside class="callout callout--watch-out">
+      <p class="callout__label">⚠️ Key Timing</p>
+      <p>Marketing (Phase 6) happens AFTER Dinnertime (Phase 4). Campaigns launched this round create demand that won't result in sales until next round!</p>
+    </aside>
+  </main>
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <a href="../../learn/" class="bottom-nav__item"><span class="bottom-nav__icon">📖</span> Learn</a>
+    <a href="../../reference/" class="bottom-nav__item is-active"><span class="bottom-nav__icon">📋</span> Reference</a>
+    <a href="#" class="bottom-nav__item"><span class="bottom-nav__icon">☰</span> Menu</a>
+  </nav>
+</div>
+<script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 6: Dinnertime – FCM Tutorial</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="page-shell page-shell--tutorial">
+
+  <header class="step-header">
+    <div class="step-header__bar">
+      <a href="../working/" class="step-header__back" aria-label="Previous step">←</a>
+      <span class="step-header__label">STEP 6 of 8: Dinnertime</span>
+      <button class="step-header__menu-btn" aria-label="Menu">☰</button>
+    </div>
+    <div class="progress-bar"><div class="progress-bar__fill" style="width: 75%"></div></div>
+  </header>
+
+  <nav class="step-dropdown" aria-label="Tutorial steps">
+    <a href="../goal/" class="step-dropdown__item"><span class="step-dropdown__number">1</span> The Goal</a>
+    <a href="../setup/" class="step-dropdown__item"><span class="step-dropdown__number">2</span> Setting Up</a>
+    <a href="../company/" class="step-dropdown__item"><span class="step-dropdown__number">3</span> Your Company</a>
+    <a href="../round/" class="step-dropdown__item"><span class="step-dropdown__number">4</span> The Round</a>
+    <a href="../working/" class="step-dropdown__item"><span class="step-dropdown__number">5</span> Working 9-5</a>
+    <a href="../dinnertime/" class="step-dropdown__item is-current"><span class="step-dropdown__number">6</span> Dinnertime</a>
+    <a href="../marketing/" class="step-dropdown__item"><span class="step-dropdown__number">7</span> Marketing</a>
+    <a href="../cleanup/" class="step-dropdown__item"><span class="step-dropdown__number">8</span> Cleanup &amp; Next Round</a>
+  </nav>
+
+  <article class="page-content">
+    <h1>Phase 4: Dinnertime</h1>
+
+    <h2>It's Automatic</h2>
+    <p>There are no decisions to make during Dinnertime. Houses are checked in <strong>numerical order</strong> (by their number on the board), and sales happen automatically based on supply, demand, and distance.</p>
+
+    <h2>The Dinnertime Checklist</h2>
+    <p>For each house (checked in numerical order), the game asks:</p>
+    <ol>
+      <li><strong>Does this house have demand counters?</strong><br>If no → skip this house, nobody's hungry.</li>
+      <li><strong>Is there a restaurant connected by road that has ALL the items demanded?</strong><br>If no → the house stays home, no sale happens.</li>
+      <li><strong>How many restaurants can fulfill the full order?</strong>
+        <ul>
+          <li>Exactly one → that restaurant makes the sale.</li>
+          <li>Multiple → competition (lowest effective price wins, see below).</li>
+        </ul>
+      </li>
+      <li><strong>Complete the sale:</strong> Remove demand counters from the house, remove items from the restaurant's stock, pay the restaurant from the bank.</li>
+    </ol>
+
+    <h2>All-or-Nothing</h2>
+    <div class="callout callout--keyrule">
+      <p><strong>A restaurant must have ALL items the house demands to make the sale.</strong> If a house wants 1 burger + 1 drink and you only have the burger, you get nothing. No partial orders.</p>
+    </div>
+
+    <h2>Payment</h2>
+    <p>Each item sold earns <strong>$10</strong>. Houses with a garden pay double — <strong>$20 per item</strong>.</p>
+    <p>For example, selling 1 burger + 1 drink to a regular house earns $20. The same sale to a house with a garden earns $40.</p>
+
+    <h2>Competition</h2>
+    <p>When multiple restaurants can fulfil a house's demand, the house picks the cheapest option based on <strong>effective price</strong>:</p>
+    <p><strong>Effective price = item price + distance (in tile border crossings)</strong></p>
+    <p>The restaurant with the lowest effective price wins the sale. Ties are broken by: most <strong>Waitresses</strong> played → earliest in <strong>turn order</strong>.</p>
+
+    <aside class="callout callout--example">
+      <p class="callout__label">🔍 Example</p>
+      <p>Your item price is $10, and you're 2 tiles away. Effective price = $12. Your opponent's price is also $10, but they're 0 tiles away. Effective price = $10. <strong>They win the customer.</strong> Note: distance penalizes you in competition but doesn't reduce your revenue — you'd still earn $10 per item if you won.</p>
+    </aside>
+
+    <figure class="figure">
+      <div class="figure__img-wrapper">
+        <img src="../../images/07_dinnertime_competition.webp" alt="Two restaurants competing for the same house — effective price determines the winner based on item price plus distance in tile crossings" loading="lazy">
+      </div>
+      <figcaption>Multiple restaurants competing for the same house — lowest effective price wins.</figcaption>
+    </figure>
+
+    <figure class="figure">
+      <div class="figure__img-wrapper">
+        <img src="../../images/07_dinnertime_selling.webp" alt="The complete selling process showing demand counters being removed, items being consumed from stock, and cash flowing from the bank to the restaurant owner" loading="lazy">
+      </div>
+      <figcaption>The selling process: demand is removed, stock is consumed, and cash flows from the bank.</figcaption>
+    </figure>
+
+    <aside class="callout callout--watch-out">
+      <p class="callout__label">⚠️ Watch Out</p>
+      <p><strong>All-or-nothing</strong> means you must stock EVERY item a house demands. If a house wants 1 burger + 1 beer and you only have the burger, they stay home. Having 90% of what they want is the same as having 0%.</p>
+    </aside>
+
+    <aside class="callout callout--watch-out">
+      <p class="callout__label">⚠️ Watch Out</p>
+      <p>Effective price determines who wins the sale, but your <strong>revenue</strong> is always $10 (or $20 with garden) per item — distance doesn't reduce what you earn.</p>
+    </aside>
+
+    <aside class="callout callout--watch-out">
+      <p class="callout__label">⚠️ Watch Out</p>
+      <p><strong>Demand counters are removed</strong> after a sale. The house won't want anything again until new marketing campaigns add fresh demand. Don't count on selling to the same house twice unless you keep marketing to it.</p>
+    </aside>
+
+    <h2>Test Your Understanding</h2>
+
+    <div class="quiz" aria-label="Who gets the sale?">
+      <p class="quiz__prompt">House #3 wants 1 burger + 1 lemonade. Restaurant A (distance 1) has 1 burger + 1 lemonade. Restaurant B (distance 0) has 2 burgers but no lemonade. Who gets the sale?</p>
+      <div class="quiz__options">
+        <button class="quiz__option" data-correct="true">Restaurant A — they have all items, even though they're farther away.</button>
+        <button class="quiz__option" data-correct="false">Restaurant B — they're closer and have more food overall.</button>
+        <button class="quiz__option" data-correct="false">No one — there's a conflict that can't be resolved.</button>
+      </div>
+      <div class="quiz__feedback">
+        <p class="quiz__feedback--correct">✅ Correct! Restaurant B can't fulfill the order because they don't have lemonade. It doesn't matter that they're closer — the all-or-nothing rule means only Restaurant A qualifies.</p>
+        <p class="quiz__feedback--incorrect">❌ Remember the all-or-nothing rule: Restaurant B doesn't have lemonade, so they can't serve this house at all. Only Restaurant A has everything the house wants.</p>
+      </div>
+    </div>
+
+    <div class="quiz" aria-label="Garden payment quiz" style="margin-top: var(--space-lg);">
+      <p class="quiz__prompt">A house WITH a garden has demand for 2 burgers. Your restaurant fulfills the order. How much do you earn?</p>
+      <div class="quiz__options">
+        <button class="quiz__option" data-correct="false">$20 — 2 items × $10 each</button>
+        <button class="quiz__option" data-correct="true">$40 — 2 items × $10 each × 2 (garden doubles payment)</button>
+        <button class="quiz__option" data-correct="false">$30 — 2 items × $10 each + $10 garden bonus</button>
+      </div>
+      <div class="quiz__feedback">
+        <p class="quiz__feedback--correct">✅ Correct! Gardens double the total payment. 2 burgers × $10 = $20, doubled to $40. Gardens are extremely valuable!</p>
+        <p class="quiz__feedback--incorrect">❌ Gardens double the total sale amount. The base payment is 2 × $10 = $20, and the garden doubles that to $40.</p>
+      </div>
+    </div>
+  </article>
+
+  <footer class="step-footer">
+    <a href="../working/" class="step-footer__link step-footer__link--prev">
+      <span class="step-footer__dir">← Previous</span>
+      <span class="step-footer__title">Working 9-5</span>
+    </a>
+    <a href="../marketing/" class="step-footer__link step-footer__link--next">
+      <span class="step-footer__dir">Next →</span>
+      <span class="step-footer__title">Marketing</span>
+    </a>
+  </footer>
+
+</div>
+<script src="../../js/main.js"></script>
+</body>
+</html>

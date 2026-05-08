@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Round — Step 4 of 8 — FCM Tutorial</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+<div class="page-shell page-shell--tutorial" data-step="4" data-total-steps="8">
+
+  <header class="step-header">
+    <div class="step-header__bar">
+      <a href="../company/" class="step-header__back" aria-label="Previous step">←</a>
+      <span class="step-header__label">STEP 4 of 8: The Round</span>
+      <button class="step-header__menu-btn" aria-label="Menu">☰</button>
+    </div>
+    <div class="progress-bar"><div class="progress-bar__fill" style="width: 50%"></div></div>
+  </header>
+
+  <nav class="step-dropdown" aria-label="Tutorial steps">
+    <a href="../goal/" class="step-dropdown__item"><span class="step-dropdown__number">1</span> The Goal</a>
+    <a href="../setup/" class="step-dropdown__item"><span class="step-dropdown__number">2</span> Setting Up</a>
+    <a href="../company/" class="step-dropdown__item"><span class="step-dropdown__number">3</span> Your Company</a>
+    <a href="../round/" class="step-dropdown__item is-current"><span class="step-dropdown__number">4</span> The Round</a>
+    <a href="../working/" class="step-dropdown__item"><span class="step-dropdown__number">5</span> Working 9-5</a>
+    <a href="../dinnertime/" class="step-dropdown__item"><span class="step-dropdown__number">6</span> Dinnertime</a>
+    <a href="../marketing/" class="step-dropdown__item"><span class="step-dropdown__number">7</span> Marketing</a>
+    <a href="../cleanup/" class="step-dropdown__item"><span class="step-dropdown__number">8</span> Cleanup &amp; Next Round</a>
+  </nav>
+
+  <article class="page-content">
+
+    <h1>The Round</h1>
+
+    <h2>Round Overview</h2>
+
+    <!-- TODO: Create custom round phase timeline illustration (P0 priority) -->
+    <div class="phase-timeline">
+      <div class="phase-timeline__item phase-timeline__item--decision">
+        <span class="phase-timeline__number">1</span>
+        <span class="phase-timeline__name">Restructuring</span>
+        <span class="phase-timeline__tag phase-timeline__tag--green">Decision</span>
+      </div>
+      <div class="phase-timeline__item phase-timeline__item--decision">
+        <span class="phase-timeline__number">2</span>
+        <span class="phase-timeline__name">Order of Business</span>
+        <span class="phase-timeline__tag phase-timeline__tag--green">Decision</span>
+      </div>
+      <div class="phase-timeline__item phase-timeline__item--decision">
+        <span class="phase-timeline__number">3</span>
+        <span class="phase-timeline__name">Working 9-5</span>
+        <span class="phase-timeline__tag phase-timeline__tag--green">Decision</span>
+      </div>
+      <div class="phase-timeline__item phase-timeline__item--auto">
+        <span class="phase-timeline__number">4</span>
+        <span class="phase-timeline__name">Dinnertime</span>
+        <span class="phase-timeline__tag phase-timeline__tag--gray">Auto</span>
+      </div>
+      <div class="phase-timeline__item phase-timeline__item--skipped">
+        <span class="phase-timeline__number">5</span>
+        <span class="phase-timeline__name"><s>Payday</s></span>
+        <span class="phase-timeline__tag phase-timeline__tag--strikethrough">Skipped</span>
+      </div>
+      <div class="phase-timeline__item phase-timeline__item--auto">
+        <span class="phase-timeline__number">6</span>
+        <span class="phase-timeline__name">Marketing</span>
+        <span class="phase-timeline__tag phase-timeline__tag--gray">Auto</span>
+      </div>
+      <div class="phase-timeline__item phase-timeline__item--auto">
+        <span class="phase-timeline__number">7</span>
+        <span class="phase-timeline__name">Cleanup</span>
+        <span class="phase-timeline__tag phase-timeline__tag--gray">Auto</span>
+      </div>
+    </div>
+
+    <p>Each round follows these 7 phases in strict order. The first three require player decisions (shown in green). The rest resolve automatically. In the introductory game, Payday is skipped entirely since there are no salaries.</p>
+
+    <h2>Phase 1: Restructuring</h2>
+
+    <p>At the start of each round, every player <strong>simultaneously and secretly</strong> decides which employees to put to work. Take the employee cards you want to use this round and place them face-down in your "work pile."</p>
+
+    <p>Once everyone is ready, all players reveal their work piles at the same time. Each revealed employee must be assigned to an available work slot in your company structure. Any employees you didn't play stay "on the beach" (benched) and do nothing this round.</p>
+
+    <aside class="callout callout--watch-out">
+      <p class="callout__label">⚠️ Watch Out</p>
+      <p>If you reveal <strong>more employees than you have work slots</strong>, ALL your employees (except your CEO) go on the beach for the entire round. Count your slots carefully before committing!</p>
+    </aside>
+
+    <h2>Phase 2: Order of Business</h2>
+
+    <p>After everyone reveals their work piles simultaneously, turn order is determined: the player who played the <strong>fewest employees to work</strong> goes first. If tied, the player who went first last round keeps priority.</p>
+
+    <p>This creates a fascinating tension: playing more employees gives you more actions, but pushes you later in turn order. Sometimes it's better to stay lean and act first than to build a sprawling company that always moves last.</p>
+
+    <h2>The Counterintuitive Order</h2>
+
+    <p>The single most confusing thing for new players: <strong>Marketing happens AFTER Dinnertime</strong>, not before. This means any marketing campaign you activate this round won't generate demand until <em>next</em> round's Dinnertime.</p>
+
+    <p>Think of it this way: during Working 9-5, your marketers go out and put up billboards. During Dinnertime, customers who already know what they want come to eat. After dinner, your billboards finally go up — and those new customers won't show up until tomorrow (next round).</p>
+
+    <p>This one-round delay is the engine of the entire game's strategy. You must plan ahead, anticipating what demand will exist next round and preparing your production accordingly.</p>
+
+    <aside class="callout callout--watch-out">
+      <p class="callout__label">⚠️ Watch Out</p>
+      <p>Marketing happens AFTER Dinnertime — this is the #1 source of confusion for new players. If you hire a marketer and use them this round, the demand they create won't result in sales until next round. Always think one round ahead!</p>
+    </aside>
+
+  </article>
+
+  <footer class="step-footer">
+    <a href="../company/" class="step-footer__link step-footer__link--prev">
+      <span class="step-footer__dir">← Previous</span>
+      <span class="step-footer__title">Your Company</span>
+    </a>
+    <a href="../working/" class="step-footer__link step-footer__link--next">
+      <span class="step-footer__dir">Next →</span>
+      <span class="step-footer__title">Working 9-5</span>
+    </a>
+  </footer>
+
+</div>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

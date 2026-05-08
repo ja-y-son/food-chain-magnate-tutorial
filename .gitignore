@@ -1,0 +1,6 @@
+# Source PDF (too large for git)
+rulebook/source.pdf
+
+# OS files
+Thumbs.db
+.DS_Store

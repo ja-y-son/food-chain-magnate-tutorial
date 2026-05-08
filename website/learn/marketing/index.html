@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 7: Marketing – FCM Tutorial</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="page-shell page-shell--tutorial">
+
+  <header class="step-header">
+    <div class="step-header__bar">
+      <a href="../dinnertime/" class="step-header__back" aria-label="Previous step">←</a>
+      <span class="step-header__label">STEP 7 of 8: Marketing</span>
+      <button class="step-header__menu-btn" aria-label="Menu">☰</button>
+    </div>
+    <div class="progress-bar"><div class="progress-bar__fill" style="width: 87.5%"></div></div>
+  </header>
+
+  <nav class="step-dropdown" aria-label="Tutorial steps">
+    <a href="../goal/" class="step-dropdown__item"><span class="step-dropdown__number">1</span> The Goal</a>
+    <a href="../setup/" class="step-dropdown__item"><span class="step-dropdown__number">2</span> Setting Up</a>
+    <a href="../company/" class="step-dropdown__item"><span class="step-dropdown__number">3</span> Your Company</a>
+    <a href="../round/" class="step-dropdown__item"><span class="step-dropdown__number">4</span> The Round</a>
+    <a href="../working/" class="step-dropdown__item"><span class="step-dropdown__number">5</span> Working 9-5</a>
+    <a href="../dinnertime/" class="step-dropdown__item"><span class="step-dropdown__number">6</span> Dinnertime</a>
+    <a href="../marketing/" class="step-dropdown__item is-current"><span class="step-dropdown__number">7</span> Marketing</a>
+    <a href="../cleanup/" class="step-dropdown__item"><span class="step-dropdown__number">8</span> Cleanup &amp; Next Round</a>
+  </nav>
+
+  <article class="page-content">
+    <h1>Marketing</h1>
+
+    <h2>Campaigns Run Automatically</h2>
+    <p>Just like Dinnertime, marketing campaigns resolve automatically. Active campaigns are processed in <strong>numerical order</strong> based on their position on the board.</p>
+
+    <h2>Campaign Reach</h2>
+    <p>Each campaign type reaches houses differently. Select a tab to see how each one works:</p>
+
+    <div class="tabs">
+      <div class="tabs__list" role="tablist">
+        <button class="tabs__tab" role="tab" aria-selected="true" aria-controls="tab-billboard" id="tab-btn-billboard">Billboard</button>
+        <button class="tabs__tab" role="tab" aria-selected="false" aria-controls="tab-mailbox" id="tab-btn-mailbox">Mailbox</button>
+        <button class="tabs__tab" role="tab" aria-selected="false" aria-controls="tab-airplane" id="tab-btn-airplane">Airplane</button>
+        <button class="tabs__tab" role="tab" aria-selected="false" aria-controls="tab-radio" id="tab-btn-radio">Radio</button>
+      </div>
+
+      <div class="tabs__panel is-active" role="tabpanel" id="tab-billboard" aria-labelledby="tab-btn-billboard">
+        <h3>Billboard</h3>
+        <p>Reaches houses on <strong>orthogonally adjacent</strong> tiles (up, down, left, right — not diagonal). The simplest campaign type with the smallest reach.</p>
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/09_campaign_reach_billboard.webp" alt="Billboard campaign reach diagram showing demand placed on houses in the 4 orthogonally adjacent tiles only" loading="lazy">
+          </div>
+          <figcaption>Billboard reach: orthogonally adjacent tiles only.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="tab-mailbox" aria-labelledby="tab-btn-mailbox">
+        <h3>Mailbox</h3>
+        <p>Reaches houses in a <strong>line-of-sight</strong> in all 4 orthogonal directions from the campaign tile. The line extends until it hits a <strong>road</strong> or the map edge.</p>
+        <aside class="callout callout--watch-out">
+          <p class="callout__label">⚠️ Watch Out</p>
+          <p><strong>Roads block mailbox reach.</strong> This is unique to mailboxes — no other campaign type is blocked by roads. Two roads touching at a corner also block the line.</p>
+        </aside>
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/09_campaign_reach_mailbox.webp" alt="Mailbox campaign reach diagram showing line-of-sight extending in 4 directions, blocked by roads" loading="lazy">
+          </div>
+          <figcaption>Mailbox reach: line-of-sight, blocked by roads.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="tab-airplane" aria-labelledby="tab-btn-airplane">
+        <h3>Airplane</h3>
+        <p>Reaches houses in a <strong>flyover zone</strong> — a broad area 1, 3, or 5 rows wide depending on the Marketeer level. The airplane flies in a straight line across the entire board.</p>
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/09_campaign_reach_airplane.webp" alt="Airplane campaign reach diagram showing a wide flyover zone spanning the entire board width" loading="lazy">
+          </div>
+          <figcaption>Airplane reach: the flyover zone covers a wide strip of the board.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="tab-radio" aria-labelledby="tab-btn-radio">
+        <h3>Radio</h3>
+        <p>Reaches houses on the <strong>same tile and all 8 surrounding tiles</strong> (including diagonals) — a full 3×3 area. The most powerful campaign type with the widest reach.</p>
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/09_campaign_reach_radio.webp" alt="Radio campaign reach diagram showing a 3×3 grid of tiles centered on the campaign" loading="lazy">
+          </div>
+          <figcaption>Radio reach: same tile + 8 surrounding tiles (3×3 area).</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <h2>How Campaigns Run</h2>
+    <p>During the Marketing phase (Phase 6), campaigns resolve <strong>automatically in numerical order</strong> (by campaign token number):</p>
+    <ol>
+      <li>Each active campaign places <strong>1 demand counter</strong> of its advertised type on every house within its reach.</li>
+      <li>Remove 1 duration counter from the campaign.</li>
+      <li>If no duration counters remain, the campaign ends and the Marketeer goes On the Beach (freed for next round).</li>
+    </ol>
+
+    <aside class="callout callout--tip">
+      <p class="callout__label">💡 Tip</p>
+      <p><strong>Campaign number matters strategically.</strong> Lower-numbered campaigns resolve first and are more likely to successfully place demand (since houses have a demand cap). Getting a low-numbered campaign token is a real advantage.</p>
+    </aside>
+
+    <h2>Demand Cap</h2>
+    <p>Each house can hold a maximum of <strong>3 demand counters</strong>. If a house has a garden, the cap increases to <strong>5</strong>.</p>
+    <p>Campaigns that would push a house over its cap simply have no effect on that house. You cannot remove existing demand to make room for yours.</p>
+
+    <h2>Campaign Duration</h2>
+    <p>Each round, <strong>1 duration counter is removed</strong> from each active campaign. When the last counter is removed, the campaign ends and the Marketeer who placed it returns to your hand.</p>
+
+    <aside class="callout callout--watch-out">
+      <p class="callout__label">⚠️ Watch Out</p>
+      <p>Houses cap at 3 demand counters (5 with garden). Additional marketing on a maxed-out house is wasted — plan your campaigns to target houses that still have room.</p>
+    </aside>
+  </article>
+
+  <footer class="step-footer">
+    <a href="../dinnertime/" class="step-footer__link step-footer__link--prev">
+      <span class="step-footer__dir">← Previous</span>
+      <span class="step-footer__title">Dinnertime</span>
+    </a>
+    <a href="../cleanup/" class="step-footer__link step-footer__link--next">
+      <span class="step-footer__dir">Next →</span>
+      <span class="step-footer__title">Cleanup &amp; Next Round</span>
+    </a>
+  </footer>
+
+</div>
+<script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Types — FCM Tutorial</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="page-shell page-shell--standard">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../../" class="site-header__logo">FCM Tutorial</a>
+      <button class="site-header__hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="site-header__nav">
+        <a href="../../learn/">Learn to Play</a>
+        <a href="../../reference/">Quick Reference</a>
+        <a href="../../full-game/">Full Game</a>
+        <a href="../../glossary/">Glossary</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content">
+    <h1>Campaign Types</h1>
+    <p class="subtitle">Four ways to create demand. Each reaches houses differently.</p>
+
+    <aside class="callout callout--key-rule">
+      <p class="callout__label">📌 Key Rule</p>
+      <p>Campaigns run during <strong>Phase 6 (Marketing)</strong>, AFTER Dinnertime. A campaign placed this round won't create sales until next round.</p>
+    </aside>
+
+    <div class="ref-grid">
+      <div class="ref-card">
+        <h2 class="ref-card__title">📢 Billboard</h2>
+        <p class="ref-card__desc"><strong>Reach:</strong> Houses on orthogonally adjacent tiles (up, down, left, right — not diagonal).</p>
+        <p class="ref-card__desc"><strong>Available from:</strong> Marketing Trainee and above.</p>
+        <p class="ref-card__desc"><strong>Best for:</strong> Targeted local advertising. Simple and reliable.</p>
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/09_campaign_reach_billboard.webp" alt="Billboard campaign reach — affects houses on the 4 orthogonally adjacent tiles" loading="lazy">
+          </div>
+          <figcaption>Billboard reach: the 4 directly adjacent tiles.</figcaption>
+        </figure>
+      </div>
+
+      <div class="ref-card">
+        <h2 class="ref-card__title">📬 Mailbox</h2>
+        <p class="ref-card__desc"><strong>Reach:</strong> Line-of-sight in all 4 orthogonal directions until blocked by a <strong>road</strong> or map edge.</p>
+        <p class="ref-card__desc"><strong>Available from:</strong> Campaign Manager and above.</p>
+        <p class="ref-card__desc"><strong>Best for:</strong> Long-range targeting. But watch for roads blocking the line!</p>
+        <aside class="callout callout--watch-out">
+          <p class="callout__label">⚠️</p>
+          <p>Roads block mailbox reach. This is unique to mailboxes — no other campaign type is blocked by roads.</p>
+        </aside>
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/09_campaign_reach_mailbox.webp" alt="Mailbox campaign reach — line-of-sight in 4 directions, blocked by roads and map edges" loading="lazy">
+          </div>
+          <figcaption>Mailbox reach: extends in straight lines, blocked by roads.</figcaption>
+        </figure>
+      </div>
+
+      <div class="ref-card">
+        <h2 class="ref-card__title">✈️ Airplane</h2>
+        <p class="ref-card__desc"><strong>Reach:</strong> Flyover zone — 1, 3, or 5 rows wide depending on Marketeer level.</p>
+        <p class="ref-card__desc"><strong>Available from:</strong> Brand Manager and above.</p>
+        <p class="ref-card__desc"><strong>Best for:</strong> Covering a wide strip of the board. Great for mass advertising.</p>
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/09_campaign_reach_airplane.webp" alt="Airplane campaign reach — a wide flyover zone spanning the entire board width" loading="lazy">
+          </div>
+          <figcaption>Airplane reach: covers a wide strip across the entire board.</figcaption>
+        </figure>
+      </div>
+
+      <div class="ref-card">
+        <h2 class="ref-card__title">📻 Radio</h2>
+        <p class="ref-card__desc"><strong>Reach:</strong> Same tile plus all 8 surrounding tiles (3×3 area, including diagonals).</p>
+        <p class="ref-card__desc"><strong>Available from:</strong> Brand Director only.</p>
+        <p class="ref-card__desc"><strong>Best for:</strong> Maximum local coverage. The most powerful campaign type.</p>
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/09_campaign_reach_radio.webp" alt="Radio campaign reach — a 3×3 grid of tiles centered on the campaign, including diagonals" loading="lazy">
+          </div>
+          <figcaption>Radio reach: campaign tile + all 8 surrounding tiles.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <h2>Demand Cap</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>House Type</th><th>Max Demand Counters</th></tr></thead>
+        <tbody>
+          <tr><td>Regular house</td><td>3</td></tr>
+          <tr><td>House with garden</td><td>5</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Extra marketing on a maxed-out house does nothing. You cannot remove existing demand to make room.</p>
+
+    <h2>Campaign Numbers Matter</h2>
+    <p>Campaigns resolve in <strong>numerical order</strong>. Lower-numbered campaigns go first and are more likely to successfully place demand. Getting a low number is a strategic advantage.</p>
+  </main>
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <a href="../../learn/" class="bottom-nav__item"><span class="bottom-nav__icon">📖</span> Learn</a>
+    <a href="../../reference/" class="bottom-nav__item is-active"><span class="bottom-nav__icon">📋</span> Reference</a>
+    <a href="#" class="bottom-nav__item"><span class="bottom-nav__icon">☰</span> Menu</a>
+  </nav>
+</div>
+<script src="../../js/main.js"></script>
+</body>
+</html>

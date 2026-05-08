@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Company — Step 3 of 8 — FCM Tutorial</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+<div class="page-shell page-shell--tutorial" data-step="3" data-total-steps="8">
+
+  <header class="step-header">
+    <div class="step-header__bar">
+      <a href="../setup/" class="step-header__back" aria-label="Previous step">←</a>
+      <span class="step-header__label">STEP 3 of 8: Your Company</span>
+      <button class="step-header__menu-btn" aria-label="Menu">☰</button>
+    </div>
+    <div class="progress-bar"><div class="progress-bar__fill" style="width: 37.5%"></div></div>
+  </header>
+
+  <nav class="step-dropdown" aria-label="Tutorial steps">
+    <a href="../goal/" class="step-dropdown__item"><span class="step-dropdown__number">1</span> The Goal</a>
+    <a href="../setup/" class="step-dropdown__item"><span class="step-dropdown__number">2</span> Setting Up</a>
+    <a href="../company/" class="step-dropdown__item is-current"><span class="step-dropdown__number">3</span> Your Company</a>
+    <a href="../round/" class="step-dropdown__item"><span class="step-dropdown__number">4</span> The Round</a>
+    <a href="../working/" class="step-dropdown__item"><span class="step-dropdown__number">5</span> Working 9-5</a>
+    <a href="../dinnertime/" class="step-dropdown__item"><span class="step-dropdown__number">6</span> Dinnertime</a>
+    <a href="../marketing/" class="step-dropdown__item"><span class="step-dropdown__number">7</span> Marketing</a>
+    <a href="../cleanup/" class="step-dropdown__item"><span class="step-dropdown__number">8</span> Cleanup &amp; Next Round</a>
+  </nav>
+
+  <article class="page-content">
+
+    <h1>Your Company</h1>
+
+    <h2>Your CEO</h2>
+
+    <p>Every player starts with a CEO. Your CEO is the root of your company tree and provides:</p>
+
+    <ul>
+      <li><strong>3 Work slots</strong> — spaces where employees can be placed to do their jobs each round.</li>
+      <li><strong>1 Hire action</strong> — letting you recruit one new employee from the job market each round.</li>
+    </ul>
+
+    <p>The CEO never "works" like other employees. Instead, the CEO manages — providing the structure that lets your company function.</p>
+
+    <h2>Work Slots Explained</h2>
+
+    <p>Your company has a <strong>pyramid structure</strong>. The CEO sits at the top, and employees are placed into work slots beneath. Each employee you hire must be placed into an available slot to do their job.</p>
+
+    <p>Some employees also provide additional slots when placed, letting you build a deeper organization. This creates a tree: the CEO provides slots, employees fill those slots, and some of those employees provide even more slots.</p>
+
+    <figure class="figure">
+      <img src="../../images/05_company_structure.webp" alt="Company structure showing the pyramid of CEO and employee slots" loading="lazy">
+      <figcaption>The company pyramid — your CEO at the top provides slots for employees below.</figcaption>
+    </figure>
+
+    <h2>On the Beach</h2>
+
+    <p>Employees who aren't placed in work slots are <strong>"on the beach"</strong> (benched). Benched employees do nothing — they don't produce, don't market, and don't contribute to your company in any way.</p>
+
+    <p>However, benched employees still count toward your total headcount. In the introductory game this doesn't cost you anything (no salaries), but in the full game, every employee demands pay regardless of whether they worked.</p>
+
+    <h2>The Overflow Catastrophe</h2>
+
+    <p>Here's the most devastating rule in the game: during Restructuring, you assign employees face-down to your work pile. When everyone reveals, if you have <strong>more employees in your work pile than available work slots</strong>, the punishment is total — <strong>every single employee except your CEO goes On the Beach</strong>. You play the entire round with just your CEO.</p>
+
+    <p>You don't just lose the extras. You lose <em>everyone</em>.</p>
+
+    <aside class="callout callout--watch-out">
+      <p class="callout__label">⚠️ Watch Out</p>
+      <p>This is the #1 most punishing mistake new players make. Remember: managers occupy a slot themselves while providing slots for others. It's easy to miscount. If your CEO has 3 slots and you play a manager (taking 1 slot but providing 2 more), you have 4 remaining slots — not 5.</p>
+    </aside>
+
+    <aside class="callout callout--tip">
+      <p class="callout__label">💡 Tip</p>
+      <p>Use the <strong>Work Planning Variant</strong> for your first game: let everyone lay cards face-down in their exact slot positions before committing. This makes it much harder to accidentally overflow.</p>
+    </aside>
+
+    <h2>Quick Slot-Count Check</h2>
+
+    <div class="quiz" data-quiz="slot-planning">
+      <p class="quiz__prompt">Your CEO provides 3 work slots. You play a Management Trainee (takes 1 slot, provides 0 extra slots) and want to add 2 more employees. Can you fit them?</p>
+      <div class="quiz__options">
+        <button class="quiz__option" data-correct="true">Yes — 1 slot for the trainee + 2 for the others = 3 slots used, exactly matching the CEO's 3.</button>
+        <button class="quiz__option" data-correct="false">No — the Management Trainee needs its own slot plus a management slot, leaving only 1 slot.</button>
+      </div>
+      <div class="quiz__feedback">
+        <p class="quiz__feedback--correct">✅ Correct! The CEO provides 3 slots. The Management Trainee fills 1, leaving 2 for your other employees. A perfect fit.</p>
+        <p class="quiz__feedback--incorrect">❌ Not quite. The Management Trainee only takes up 1 regular work slot. Your CEO's 3 slots can hold the trainee plus 2 more employees.</p>
+      </div>
+    </div>
+
+  </article>
+
+  <footer class="step-footer">
+    <a href="../setup/" class="step-footer__link step-footer__link--prev">
+      <span class="step-footer__dir">← Previous</span>
+      <span class="step-footer__title">Setting Up</span>
+    </a>
+    <a href="../round/" class="step-footer__link step-footer__link--next">
+      <span class="step-footer__dir">Next →</span>
+      <span class="step-footer__title">The Round</span>
+    </a>
+  </footer>
+
+</div>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

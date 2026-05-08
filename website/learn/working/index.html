@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 5: Working 9-5 – FCM Tutorial</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="page-shell page-shell--tutorial">
+
+  <header class="step-header">
+    <div class="step-header__bar">
+      <a href="../round/" class="step-header__back" aria-label="Previous step">←</a>
+      <span class="step-header__label">STEP 5 of 8: Working 9-5</span>
+      <button class="step-header__menu-btn" aria-label="Menu">☰</button>
+    </div>
+    <div class="progress-bar"><div class="progress-bar__fill" style="width: 62.5%"></div></div>
+  </header>
+
+  <nav class="step-dropdown" aria-label="Tutorial steps">
+    <a href="../goal/" class="step-dropdown__item"><span class="step-dropdown__number">1</span> The Goal</a>
+    <a href="../setup/" class="step-dropdown__item"><span class="step-dropdown__number">2</span> Setting Up</a>
+    <a href="../company/" class="step-dropdown__item"><span class="step-dropdown__number">3</span> Your Company</a>
+    <a href="../round/" class="step-dropdown__item"><span class="step-dropdown__number">4</span> The Round</a>
+    <a href="../working/" class="step-dropdown__item is-current"><span class="step-dropdown__number">5</span> Working 9-5</a>
+    <a href="../dinnertime/" class="step-dropdown__item"><span class="step-dropdown__number">6</span> Dinnertime</a>
+    <a href="../marketing/" class="step-dropdown__item"><span class="step-dropdown__number">7</span> Marketing</a>
+    <a href="../cleanup/" class="step-dropdown__item"><span class="step-dropdown__number">8</span> Cleanup &amp; Next Round</a>
+  </nav>
+
+  <article class="page-content">
+    <h1>Phase 3: Working 9-5</h1>
+
+    <p>This is the heart of the game — Phase 3 has several sub-phases, each resolved in <strong>turn order</strong>. Most actions here are <strong>optional</strong> (you can choose not to use an employee's action), but some are mandatory.</p>
+
+    <figure class="figure">
+      <div class="figure__img-wrapper">
+        <img src="../../images/01b_employee_card_progression.webp" alt="Employee card progression showing how entry-level employees train into more powerful versions along different career paths" loading="lazy">
+      </div>
+      <figcaption>Employee training paths — entry-level employees can be upgraded into specialists.</figcaption>
+    </figure>
+
+    <!-- Accordion: Hiring -->
+    <details class="accordion">
+      <summary class="accordion__trigger" aria-controls="panel-hiring">3a. Hiring</summary>
+      <div class="accordion__panel" id="panel-hiring">
+        <p>Your CEO gives you <strong>1 free hire per round</strong>. Take any <strong>entry-level employee</strong> from the supply.</p>
+        <p>The new hire goes <strong>On the Beach</strong> — they can't work until next round. You can hire and train the same employee in the same turn if you have a Trainer.</p>
+
+        <h3>Key Entry-Level Employees</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Employee</th>
+                <th>What They Do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Management Trainee</strong></td><td>Trains into managers, waitresses, pricing employees — the most versatile hire</td></tr>
+              <tr><td><strong>Recruiting Girl</strong></td><td>Gives 1 extra hire action per round</td></tr>
+              <tr><td><strong>Marketing Trainee</strong></td><td>Trains into Marketeers who place advertising campaigns</td></tr>
+              <tr><td><strong>Burger Cook</strong></td><td>Produces 1 burger per round</td></tr>
+              <tr><td><strong>Pizza Cook</strong></td><td>Produces 3 pizzas per round</td></tr>
+              <tr><td><strong>Errand Boy</strong></td><td>Collects 1 drink of any type (no route needed!)</td></tr>
+              <tr><td><strong>Cart Operator</strong></td><td>Traces a road route, collects 2 drinks per supplier passed</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="callout callout--tip">
+          <p class="callout__label">💡 Tip</p>
+          <p><strong>First round:</strong> You only have your CEO, so you'll just hire 1 employee. Good first hires: Marketing Trainee (you need advertising), Recruiting Girl (grow faster), or a food producer.</p>
+        </aside>
+      </div>
+    </details>
+
+    <!-- Accordion: Training -->
+    <details class="accordion">
+      <summary class="accordion__trigger" aria-controls="panel-training">3b. Training</summary>
+      <div class="accordion__panel" id="panel-training">
+        <p>If you have a <strong>Trainer</strong> (or Coach, or Guru) in your work structure, you can upgrade employees.</p>
+        <ul>
+          <li>The employee being trained must be <strong>On the Beach</strong> (not in a work slot).</li>
+          <li>Return the old card to the supply and take the upgraded version.</li>
+          <li>Check your <strong>menu card</strong> for valid training paths.</li>
+          <li>You <strong>can</strong> hire and train the same employee in the same turn!</li>
+        </ul>
+
+        <aside class="callout callout--example">
+          <p class="callout__label">🔍 Example</p>
+          <p>Hire a Management Trainee → they go On the Beach → your Trainer upgrades them into a Junior Vice President → next round, train them further into a Senior Vice President, Waitress, or Coach.</p>
+        </aside>
+
+        <h3>Key Training Paths</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Path</th><th>Progression</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Food</td><td>Burger Cook → Burger Chef (3 burgers) &nbsp;|&nbsp; Pizza Cook → Pizza Chef (8 pizzas)</td></tr>
+              <tr><td>Drinks</td><td>Errand Boy → Cart Operator → Truck Driver → Zeppelin Pilot</td></tr>
+              <tr><td>Marketing</td><td>Marketing Trainee → Campaign Manager → Brand Manager → Brand Director</td></tr>
+              <tr><td>Management</td><td>Management Trainee → Junior VP → Senior VP → many specializations</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </details>
+
+    <!-- Accordion: Food & Drinks -->
+    <details class="accordion">
+      <summary class="accordion__trigger" aria-controls="panel-food">3c. Food &amp; Drinks</summary>
+      <div class="accordion__panel" id="panel-food">
+        <h3>Food Production</h3>
+        <p>Kitchen employees produce food that goes into your shared <strong>stock</strong>. All your restaurants share one stock pool.</p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Employee</th><th>Produces</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Burger Cook</td><td>1 burger</td></tr>
+              <tr><td>Burger Chef</td><td>3 burgers</td></tr>
+              <tr><td>Pizza Cook</td><td>3 pizzas</td></tr>
+              <tr><td>Pizza Chef</td><td>8 pizzas</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Drink Collection</h3>
+        <p>Drinks aren't produced — they're <strong>collected from supplier locations on the map</strong>. Different employees collect drinks in different ways:</p>
+        <ul>
+          <li><strong>Errand Boy</strong> — collects 1 drink of any type, <strong>no route needed</strong> (easiest option!)</li>
+          <li><strong>Cart Operator</strong> — traces a road route from your entrance, collects 2 drinks from each supplier adjacent to the route (Range 2)</li>
+          <li><strong>Truck Driver</strong> — like Cart Operator but collects 3 per supplier (Range 5)</li>
+          <li><strong>Zeppelin Pilot</strong> — flies by air (ignores roads), collects 2 from each supplier on tiles entered</li>
+        </ul>
+
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/06_drink_routes_p1.webp" alt="A Cart Operator tracing a road route from a restaurant entrance, passing through tile borders to collect drinks from suppliers adjacent to the path" loading="lazy">
+          </div>
+          <figcaption>Example drink collection route — the Cart Operator traces roads from the restaurant entrance.</figcaption>
+        </figure>
+
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/04_distance_counting.webp" alt="Diagram showing how to count distance by counting tile border crossings, not individual road squares" loading="lazy">
+          </div>
+          <figcaption>Range counts tile border crossings, not individual road squares.</figcaption>
+        </figure>
+
+        <aside class="callout callout--watch-out">
+          <p class="callout__label">⚠️ Watch Out</p>
+          <p><strong>Road routes start from your Entrance Corner</strong>, not from anywhere on your restaurant. Routes trace along connected roads and <strong>range counts tile border crossings</strong>, not road squares. A Cart Operator with Range 2 can cross 2 tile borders.</p>
+        </aside>
+
+        <aside class="callout callout--watch-out">
+          <p class="callout__label">⚠️ Watch Out</p>
+          <p><strong>Stock is shared</strong> across ALL your restaurants. Food produced goes into a single pool. Any of your restaurants can sell from it — but once sold, it's gone for everyone.</p>
+        </aside>
+
+        <details class="expander">
+          <summary class="expander__trigger" aria-expanded="false" aria-controls="route-details">More details on road routes</summary>
+          <div class="expander__content" id="route-details">
+            <ul>
+              <li>You <strong>can</strong> backtrack through previously-visited road squares, but you <strong>cannot</strong> immediately reverse direction (step back onto the square you just came from).</li>
+              <li>Each drink source can only be collected from <strong>once per employee per route</strong>.</li>
+              <li><strong>Bridges:</strong> Two roads can cross at a bridge without connecting. A cart on Road A cannot switch to Road B at a bridge. Pretend they're on different floors.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </details>
+
+    <!-- Accordion: Marketing Campaigns -->
+    <details class="accordion">
+      <summary class="accordion__trigger" aria-controls="panel-marketing">3d. Marketing Campaigns</summary>
+      <div class="accordion__panel" id="panel-marketing">
+        <p>Use your <strong>Marketeers</strong> to place advertising campaign tokens on the map:</p>
+        <ol>
+          <li>Pick a campaign type your Marketeer can place (billboard, mailbox, airplane, or radio).</li>
+          <li>Place the campaign token within the Marketeer's range from a restaurant entrance.</li>
+          <li>Choose <strong>what item</strong> to advertise (burger, pizza, soda, lemonade, or beer).</li>
+          <li>Choose the <strong>duration</strong> (how many rounds it will run).</li>
+        </ol>
+
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/08_campaign_placement.webp" alt="A Marketeer placing a billboard campaign token on the map within range of a restaurant entrance" loading="lazy">
+          </div>
+          <figcaption>Placing a marketing campaign within range of your restaurant entrance.</figcaption>
+        </figure>
+
+        <aside class="callout callout--watch-out">
+          <p class="callout__label">⚠️ Watch Out</p>
+          <p>A busy Marketeer is <strong>LOCKED IN</strong> — they can't be used, trained, or reassigned until the campaign ends. Plan your campaign durations carefully!</p>
+        </aside>
+
+        <aside class="callout callout--watch-out">
+          <p class="callout__label">⚠️ Watch Out</p>
+          <p>Campaigns <strong>don't create demand right away</strong>. They run during Phase 6 (Marketing), which happens AFTER Dinnertime. A campaign launched this round won't generate sales until <strong>next round at the earliest</strong>.</p>
+        </aside>
+      </div>
+    </details>
+
+    <!-- Accordion: Other Actions -->
+    <details class="accordion">
+      <summary class="accordion__trigger" aria-controls="panel-other">3e–g. Other Actions</summary>
+      <div class="accordion__panel" id="panel-other">
+        <h3>Drive-Ins (Mandatory)</h3>
+        <p>If you have a <strong>Local or Regional Manager</strong> in your structure, you <strong>must</strong> place Drive-In signs on all your restaurants. This gives them entrances at all 4 corners until end of round — massively expanding their reach.</p>
+
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/11_drive_in_example.webp" alt="A restaurant with Drive-In signs showing entrances at all 4 corners instead of just 1" loading="lazy">
+          </div>
+          <figcaption>Drive-In signs give your restaurant 4 entrance corners instead of 1.</figcaption>
+        </figure>
+
+        <h3>Houses &amp; Gardens</h3>
+        <p><strong>New Business Developers</strong> can place new house tokens on the map or add gardens to existing houses.</p>
+        <ul>
+          <li>Houses with gardens can hold <strong>5 demand counters</strong> (instead of 3).</li>
+          <li>Houses with gardens pay <strong>double price</strong> for everything they buy ($20 per item instead of $10).</li>
+        </ul>
+
+        <figure class="figure">
+          <div class="figure__img-wrapper">
+            <img src="../../images/12_houses_and_gardens.webp" alt="Houses and gardens on the map showing regular houses (3 demand max) and houses with gardens (5 demand max, double price)" loading="lazy">
+          </div>
+          <figcaption>Gardens double the demand capacity and the price houses pay.</figcaption>
+        </figure>
+
+        <h3>Restaurants</h3>
+        <p><strong>Local Managers</strong> can open a new restaurant within road range 3 (it opens as "Coming Soon" — active next round).</p>
+        <p><strong>Regional Managers</strong> can place a new restaurant <strong>anywhere</strong> (immediately open) or relocate an existing one.</p>
+      </div>
+    </details>
+  </article>
+
+  <footer class="step-footer">
+    <a href="../round/" class="step-footer__link step-footer__link--prev">
+      <span class="step-footer__dir">← Previous</span>
+      <span class="step-footer__title">The Round</span>
+    </a>
+    <a href="../dinnertime/" class="step-footer__link step-footer__link--next">
+      <span class="step-footer__dir">Next →</span>
+      <span class="step-footer__title">Dinnertime</span>
+    </a>
+  </footer>
+
+</div>
+<script src="../../js/main.js"></script>
+</body>
+</html>

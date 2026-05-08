@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your First Game — FCM Tutorial</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="page-shell page-shell--standard">
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="../" class="site-header__logo">FCM Tutorial</a>
+        <nav class="site-header__nav" id="main-nav">
+          <a href="../learn/goal/">Learn to Play</a>
+          <a href="../reference/">Quick Reference</a>
+          <a href="../full-game/">Full Game Rules</a>
+        </nav>
+        <button class="site-header__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <h1>Your First Game</h1>
+      <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl);">A walkthrough of rounds 1–3 in a 2-player introductory game</p>
+
+      <aside class="callout callout--tip">
+        <p class="callout__label">💡 Before You Start</p>
+        <p>Use the <strong>Work Planning Variant</strong>: let everyone lay cards face-down in their exact slot positions before committing. This prevents the overflow catastrophe during your learning game.</p>
+      </aside>
+
+      <div class="card" style="margin-bottom: var(--space-lg);">
+        <h2>Round 1: Just Your CEO</h2>
+        <h3>Phase 1 – Restructuring</h3>
+        <p>You only have your CEO. No decisions to make — just flip your CEO face-up.</p>
+
+        <h3>Phase 2 – Turn Order</h3>
+        <p>Both players have 3 empty slots (CEO provides 3, none are filled). Ties are broken by previous turn order or randomly.</p>
+
+        <h3>Phase 3 – Working 9-5</h3>
+        <p>Your CEO gives you <strong>1 free hire</strong>. This is your only action. Good first hires:</p>
+        <ul>
+          <li><strong>Marketing Trainee</strong> — you'll need advertising. Without marketing, no houses will ever have demand.</li>
+          <li><strong>Errand Boy</strong> — cheapest way to start collecting drinks (1 drink, no route needed).</li>
+          <li><strong>Burger Cook or Pizza Cook</strong> — start producing food early.</li>
+          <li><strong>Recruiting Girl</strong> — lets you hire 2 employees next round (aggressive growth).</li>
+          <li><strong>Management Trainee</strong> — the most flexible option (trains into almost anything later).</li>
+        </ul>
+        <p>Your new hire goes <strong>On the Beach</strong>. They can't work until next round.</p>
+
+        <h3>Phases 4–7</h3>
+        <p><strong>Dinnertime:</strong> No houses have demand yet. Nothing happens.</p>
+        <p><strong>Marketing:</strong> No campaigns active. Nothing happens.</p>
+        <p><strong>Cleanup:</strong> Nothing to clean up. Start round 2.</p>
+
+        <aside class="callout callout--tip">
+          <p class="callout__label">💡 Tip</p>
+          <p>Don't panic that nothing is happening. The first few rounds are about building your engine. Everyone starts slow.</p>
+        </aside>
+      </div>
+
+      <div class="card" style="margin-bottom: var(--space-lg);">
+        <h2>Round 2: Building Your Engine</h2>
+        <h3>Phase 1 – Restructuring</h3>
+        <p>Now you have your CEO + 1 employee from last round. Decide: put that employee to work, or keep them On the Beach?</p>
+        <p>If you hired a Marketing Trainee, put them in a work slot — you want to start a campaign.</p>
+
+        <h3>Phase 3 – Working 9-5</h3>
+        <p>You now have <strong>2 work slots filled</strong> (or 1, depending on your hire). Key actions this round:</p>
+        <ul>
+          <li><strong>Hire</strong> another employee with your CEO's free hire.</li>
+          <li><strong>Launch a campaign</strong> if you have a Marketeer — pick a food type and place a billboard near houses your restaurant can reach.</li>
+          <li><strong>Produce food</strong> if you have a cook — but no one can buy it yet!</li>
+        </ul>
+
+        <aside class="callout callout--watch-out">
+          <p class="callout__label">⚠️ Watch Out</p>
+          <p>If you launch a campaign now, the demand appears during Phase 6 (Marketing) — AFTER Dinnertime. No one can sell food this round. The earliest sales happen in Round 3.</p>
+        </aside>
+
+        <h3>Phase 6 – Marketing</h3>
+        <p>If anyone launched a campaign, demand counters now appear on houses within the campaign's reach. Finally, customers know they want food!</p>
+      </div>
+
+      <div class="card" style="margin-bottom: var(--space-lg);">
+        <h2>Round 3: First Sales! 💰</h2>
+        <h3>The Setup</h3>
+        <p>By now, some houses should have demand counters from Round 2's marketing. If you've been producing food, you might have items in stock. This is your chance to sell.</p>
+
+        <h3>Phase 3 – Working 9-5</h3>
+        <p>Your priorities this round:</p>
+        <ul>
+          <li><strong>Produce food/drinks</strong> that match the demand on nearby houses.</li>
+          <li><strong>Check the all-or-nothing rule:</strong> make sure you have EVERY item a house demands, not just some of them.</li>
+          <li><strong>Continue marketing</strong> to keep demand flowing for future rounds.</li>
+        </ul>
+
+        <h3>Phase 4 – Dinnertime</h3>
+        <p>Houses are checked in numerical order. For each house:</p>
+        <ol>
+          <li>Does it have demand? ✓</li>
+          <li>Is it connected to your restaurant by road? ✓</li>
+          <li>Do you have ALL the items it wants? ✓</li>
+          <li>If you're the only qualifying restaurant → <strong>Sale!</strong></li>
+        </ol>
+        <p>Collect $10 per item from the bank ($20 per item if the house has a garden). The demand counters are removed from the house.</p>
+
+        <aside class="callout callout--example">
+          <p class="callout__label">🔍 Example</p>
+          <p>House #3 wants 1 burger. You have 1 burger in stock and your restaurant is connected by road. Sale! Collect $10 from the bank. The demand counter is removed from the house. Your burger is consumed from stock.</p>
+        </aside>
+      </div>
+
+      <section>
+        <h2>Key Takeaways</h2>
+
+        <div class="card" style="margin-bottom: var(--space-md);">
+          <p><strong>1. The first few rounds are quiet.</strong> Nobody can sell until houses have demand AND a restaurant has matching stock. This takes at least 2-3 rounds. Don't panic.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: var(--space-md);">
+          <p><strong>2. Marketing is the engine's ignition.</strong> Without marketing, no houses want food. Get a Marketeer working early.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: var(--space-md);">
+          <p><strong>3. Match production to demand.</strong> Only make what you can sell. Unsold food is thrown away during Cleanup.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: var(--space-md);">
+          <p><strong>4. Watch what your opponent does.</strong> If they're marketing burgers near houses you can also reach, produce burgers too — or market something different to avoid competition.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: var(--space-md);">
+          <p><strong>5. The bank is the clock.</strong> Every dollar paid to any player drains the bank. When it's getting low, make sure you've already converted your engine into cash.</p>
+        </div>
+      </section>
+
+      <nav style="display: flex; justify-content: space-between; margin-top: var(--space-xl);">
+        <a href="../learn/goal/" class="btn btn--secondary">← Back to Tutorial</a>
+        <a href="../reference/" class="btn btn--primary">Quick Reference →</a>
+      </nav>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Bottom navigation">
+      <a href="../learn/goal/" class="bottom-nav__item">
+        <span class="bottom-nav__icon">📖</span>
+        Learn
+      </a>
+      <a href="../reference/" class="bottom-nav__item">
+        <span class="bottom-nav__icon">📋</span>
+        Reference
+      </a>
+      <a href="#" class="bottom-nav__item" id="bottom-menu-toggle">
+        <span class="bottom-nav__icon">☰</span>
+        Menu
+      </a>
+    </nav>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
