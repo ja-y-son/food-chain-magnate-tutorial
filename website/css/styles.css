@@ -459,52 +459,7 @@ li {
   color: var(--color-primary);
 }
 
-.site-header__nav {
-  display: flex;
-  gap: var(--space-lg);
-}
 
-.site-header__nav a {
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  color: var(--color-text-muted);
-}
-
-.site-header__nav a:hover {
-  color: var(--color-primary);
-}
-
-/* Mobile hamburger */
-.site-header__hamburger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--tap-target-min);
-  height: var(--tap-target-min);
-  font-size: 1.5rem;
-  color: var(--color-text-muted);
-}
-
-@media (min-width: 768px) {
-  .site-header__hamburger { display: none; }
-}
-
-@media (max-width: 767px) {
-  .site-header__nav { display: none; }
-  .site-header__nav.is-open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--color-surface);
-    padding: var(--space-md);
-    border-bottom: 1px solid var(--color-progress-bg);
-    box-shadow: var(--shadow-md);
-    z-index: 90;
-  }
-}
 
 /* --------------------------------------------------------------------------
    8. Callout Boxes
@@ -1002,33 +957,18 @@ tr.is-skipped td {
 }
 
 .value-props {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-md);
-  margin: var(--space-xl) auto;
-  max-width: 480px;
-}
-
-@media (min-width: 520px) {
-  .value-props {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 680px;
-  }
-}
-
-.value-prop {
-  text-align: center;
-  padding: var(--space-md);
-}
-
-.value-prop__icon {
-  font-size: 2rem;
-  margin-bottom: var(--space-sm);
-}
-
-.value-prop__text {
-  font-size: var(--fs-callout);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xs) var(--space-sm);
+  margin: var(--space-md) auto;
   color: var(--color-text-muted);
+  font-size: var(--fs-callout);
+}
+
+.value-prop__sep {
+  color: var(--color-progress-bg);
 }
 
 /* --------------------------------------------------------------------------
@@ -1069,38 +1009,60 @@ tr.is-skipped td {
   }
 }
 
+@media (min-width: 900px) {
+  .ref-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .ref-grid__link {
   display: flex;
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-lg);
   background: var(--color-surface);
+  border: 1px solid var(--color-progress-bg);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   text-decoration: none;
   color: var(--color-text);
-  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
 }
 
 .ref-grid__link:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
+  border-color: var(--color-primary-light);
   text-decoration: none;
+}
+
+.ref-grid__link:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
 }
 
 .ref-grid__icon {
   font-size: 2rem;
   flex-shrink: 0;
+  width: 2.5rem;
+  text-align: center;
+}
+
+.ref-grid__text {
+  min-width: 0;
 }
 
 .ref-grid__title {
+  font-size: var(--fs-body);
   font-weight: 700;
   margin-bottom: var(--space-xs);
+  color: var(--color-text);
 }
 
 .ref-grid__desc {
   font-size: var(--fs-caption);
   color: var(--color-text-muted);
+  margin: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -1334,58 +1296,9 @@ tr.is-skipped td {
   background: var(--color-progress-bg);
 }
 
-/* --------------------------------------------------------------------------
-   22. Mobile Bottom Nav Bar
-   -------------------------------------------------------------------------- */
-.bottom-nav {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: var(--color-surface);
-  border-top: 1px solid var(--color-progress-bg);
-  z-index: 100;
-  height: var(--footer-height);
-}
-
-.bottom-nav__item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  text-decoration: none;
-  color: var(--color-text-muted);
-  font-size: var(--fs-small);
-  font-weight: 500;
-  min-height: var(--tap-target-min);
-}
-
-.bottom-nav__item.is-active {
-  color: var(--color-primary);
-}
-
-.bottom-nav__icon {
-  font-size: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .bottom-nav {
-    display: none;
-  }
-}
-
-/* Non-tutorial pages need bottom padding on mobile for bottom-nav */
+/* Non-tutorial pages */
 .page-shell--standard .page-content {
-  padding-bottom: calc(var(--footer-height) + var(--space-lg));
-}
-
-@media (min-width: 768px) {
-  .page-shell--standard .page-content {
-    padding-bottom: var(--space-lg);
-  }
+  padding-bottom: var(--space-lg);
 }
 
 /* --------------------------------------------------------------------------
@@ -1458,17 +1371,20 @@ tr.is-skipped td {
   width: 100%;
   padding: var(--space-sm) var(--space-md);
   border: 2px solid var(--color-progress-bg);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   font-size: var(--fs-body);
   font-family: var(--font-body);
   min-height: var(--tap-target-min);
   background: var(--color-surface);
-  transition: border-color var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  margin-bottom: var(--space-xl);
 }
 
 .search-input:focus {
   outline: none;
   border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-bg);
 }
 
 .search-results {
@@ -1496,9 +1412,7 @@ tr.is-skipped td {
    -------------------------------------------------------------------------- */
 @media print {
   .step-header,
-  .step-footer,
-  .bottom-nav,
-  .site-header__hamburger {
+  .step-footer {
     display: none !important;
   }
 

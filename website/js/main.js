@@ -128,27 +128,6 @@
   }
 
   /* --------------------------------------------------------------------------
-     5. Mobile Menu Toggle
-     -------------------------------------------------------------------------- */
-  function initMobileMenu() {
-    var hamburger = document.querySelector('.site-header__hamburger');
-    var nav = document.querySelector('.site-header__nav');
-    if (!hamburger || !nav) return;
-
-    hamburger.addEventListener('click', function (e) {
-      e.stopPropagation();
-      nav.classList.toggle('is-open');
-      var expanded = nav.classList.contains('is-open');
-      hamburger.setAttribute('aria-expanded', String(expanded));
-    });
-
-    document.addEventListener('click', function () {
-      nav.classList.remove('is-open');
-      if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
-    });
-  }
-
-  /* --------------------------------------------------------------------------
      6. Image Zoom
      -------------------------------------------------------------------------- */
   function initImageZoom() {
@@ -357,7 +336,7 @@
     initExpanders();
     initGlossaryTooltips();
     initStepDropdown();
-    initMobileMenu();
+
     initImageZoom();
     initTabs();
     initQuizzes();
