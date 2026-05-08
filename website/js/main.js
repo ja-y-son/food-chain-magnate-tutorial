@@ -109,14 +109,18 @@
      4. Step Dropdown (Jump to Step)
      -------------------------------------------------------------------------- */
   function initStepDropdown() {
+    var menuBtn = document.querySelector('.step-header__menu-btn');
     var label = document.querySelector('.step-header__label');
     var dropdown = document.querySelector('.step-dropdown');
-    if (!label || !dropdown) return;
+    if (!dropdown) return;
 
-    label.addEventListener('click', function (e) {
+    function toggleDropdown(e) {
       e.stopPropagation();
       dropdown.classList.toggle('is-open');
-    });
+    }
+
+    if (menuBtn) menuBtn.addEventListener('click', toggleDropdown);
+    if (label) label.addEventListener('click', toggleDropdown);
 
     document.addEventListener('click', function () {
       dropdown.classList.remove('is-open');
